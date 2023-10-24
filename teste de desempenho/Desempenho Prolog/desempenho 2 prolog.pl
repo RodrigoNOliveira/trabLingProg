@@ -1,6 +1,6 @@
 % Predicado para gerar uma grande lista de números aleatórios
 geraLista(0, []).
-geraLista(N, [H|T]) :- N > 0, random(1, 1000, H), N1 is N - 1, geraLista(N1, T).
+geraLista(N, [H|T]) :- N > 0, random(1, 5000, H), N1 is N - 1, geraLista(N1, T).
 
 % Predicado para encontrar o valor máximo em uma lista
 maior([], Max, Max).

@@ -11,7 +11,7 @@ public class App2 {
         int tamanho = 1000000;
         Random random = new Random();
         for (int i = 0; i < tamanho; i++) {
-            lista.add(random.nextInt(1000));
+            lista.add(random.nextInt(5000));
         }
 
         int max = lista.get(0);
@@ -24,6 +24,6 @@ public class App2 {
         long fim = System.currentTimeMillis();
         double gasto = fim - inicio;
         System.out.println("Valor máximo encontrado: " + max);
-        System.out.println("Tempo gasto: " + gasto + " milissegundos");
+        System.out.println("Tempo gasto: " + gasto/1000 + " segundos");
     }
 }

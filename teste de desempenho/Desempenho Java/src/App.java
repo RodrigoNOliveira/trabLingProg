@@ -11,8 +11,9 @@ public class App {
         long inicio = System.currentTimeMillis();
         long resultado = calcularSoma(1000000);  // Altere o valor de N conforme necessário
         long fim = System.currentTimeMillis();
+        double tempo = fim - inicio;
 
         System.out.println("Resultado: " + resultado);
-        System.out.println("Tempo gasto: " + (fim - inicio) + " milissegundos");
+        System.out.println("Tempo gasto: " + tempo/1000 + " segundos");
     }
 }

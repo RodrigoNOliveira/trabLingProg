@@ -9,10 +9,11 @@ object DesempenhoScala {
 
   def main(args: Array[String]): Unit = {
     val inicio = System.currentTimeMillis()
-    val resultado = calcularSoma(1000000)  // Altere o valor de N conforme necessário
+    val resultado = calcularSoma(1000000)  
     val fim = System.currentTimeMillis()
-
+    val tempo: Double= fim - inicio
+    
     println(s"Resultado: $resultado")
-    println(s"Tempo corrido: ${(fim - inicio)} milissegundos")
+    println(s"Tempo corrido: ${tempo/1000} segundos")
   }
 }
