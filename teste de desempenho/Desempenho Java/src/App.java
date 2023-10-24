@@ -8,11 +8,11 @@ public class App {
     }
 
     public static void main(String[] args) {
-        long inicio = System.nanoTime();
+        long inicio = System.currentTimeMillis();
         long resultado = calcularSoma(1000000);  // Altere o valor de N conforme necessário
-        long fim = System.nanoTime();
+        long fim = System.currentTimeMillis();
 
         System.out.println("Resultado: " + resultado);
-        System.out.println("Tempo decorrido: " + (fim - inicio) / 1e6 + " milissegundos");
+        System.out.println("Tempo gasto: " + (fim - inicio) + " milissegundos");
     }
 }

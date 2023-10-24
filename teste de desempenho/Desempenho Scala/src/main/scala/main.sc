@@ -8,11 +8,11 @@ object DesempenhoScala {
   }
 
   def main(args: Array[String]): Unit = {
-    val inicio = System.nanoTime()
+    val inicio = System.currentTimeMillis()
     val resultado = calcularSoma(1000000)  // Altere o valor de N conforme necessário
-    val fim = System.nanoTime()
+    val fim = System.currentTimeMillis()
 
     println(s"Resultado: $resultado")
-    println(s"Tempo decorrido: ${(fim - inicio) / 1e6} milissegundos")
+    println(s"Tempo corrido: ${(fim - inicio)} milissegundos")
   }
 }
