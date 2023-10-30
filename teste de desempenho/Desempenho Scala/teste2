@@ -10,8 +10,6 @@ object Desempenho2 {
     val fim = System.currentTimeMillis()
     val tempo: Double= fim - inicio
 
-    0.464 
-    
     println(s"Valor máximo encontrado: $max")
     println(s"Tempo corrido: ${tempo/1000} segundos")
   }
