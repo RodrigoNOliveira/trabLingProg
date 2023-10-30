@@ -8,7 +8,7 @@ public class App2 {
         List<Integer> lista = new ArrayList<>();
         long inicio = System.currentTimeMillis();
 
-        int tamanho = 1000000;
+        int tamanho = 10000000;
         Random random = new Random();
         for (int i = 0; i < tamanho; i++) {
             lista.add(random.nextInt(5000));
@@ -24,6 +24,6 @@ public class App2 {
         long fim = System.currentTimeMillis();
         double gasto = fim - inicio;
         System.out.println("Valor máximo encontrado: " + max);
-        System.out.println("Tempo gasto: " + gasto/1000 + " segundos");
+        System.out.printf("Tempo gasto: %f segundos", gasto / 1000);
     }
 }

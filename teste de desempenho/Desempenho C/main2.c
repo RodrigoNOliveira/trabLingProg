@@ -5,8 +5,7 @@
 int main()
 {
     clock_t inicio = clock();
-    int tamanho = 1000000;
-    // int lista[tamanho];
+    int tamanho = 10000000;
     int *lista;
     int i, j;
     srand(time(NULL));

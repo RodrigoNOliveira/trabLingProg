@@ -9,11 +9,11 @@ public class App {
 
     public static void main(String[] args) {
         long inicio = System.currentTimeMillis();
-        long resultado = calcularSoma(1000000);  // Altere o valor de N conforme necessário
+        long resultado = calcularSoma(10000000);  
         long fim = System.currentTimeMillis();
         double tempo = fim - inicio;
 
         System.out.println("Resultado: " + resultado);
-        System.out.println("Tempo gasto: " + tempo/1000 + " segundos");
+        System.out.printf("Tempo gasto: %f segundos", tempo/1000);
     }
 }
